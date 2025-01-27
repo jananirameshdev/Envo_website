@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <div class="navbar">
+          <div class="logo">
+              <img src="https://i.ibb.co/rGW08mB/logo-removebg-preview.png" alt="Logo">
+              <span>Envo</span>
+          </div>
+          <nav>
+            <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+              <div class="auth-buttons" id="auth-buttons">
+                  <a href="#" class="home-btn">Home</a>
+                  <a href="#about" class="about-btn">About</a>
+                  <a href="#services" class="service-btn">Service</a>
+                  <a href="#start" class="contact-btn">Contact Us</a>
+              </div>
+          </nav>
+      </div>
+  </header>
+    <section class="home">
+      <h1 class="welcome">Welcome to Our Green Planet</h1>
+      <p class="para1">
+        Discover a world dedicated to preserving our environment and creating a sustainable future for generations to come. At Envo, we strive to inspire and empower individuals and communities to take meaningful actions toward a healthier planet.
+      </p>
+      <p class="para2">
+        From educating people on climate change to promoting green technologies, we aim to spark a global movement of environmental stewardship. Explore our website to learn how you can contribute to making Earth a better place to live.
+      </p>
+      <p class="para3">
+        Join us in our journey to reduce pollution, protect wildlife, and embrace renewable energy solutions. Together, we can make a difference, one step at a time.
+      </p>
+      <button class="get-start">Get Started</button>
+    </section>
+    <section class="testimonials">
+      <h2 class="testimonial-title">What Our Users Say</h2>
+      <div class="testimonial-container">
+          <div class="testimonial-card">
+              <p class="testimonial-text">
+                  "Envo has completely transformed the way I think about sustainability. Their initiatives are inspiring!"
+              </p>
+              <div class="testimonial-author">
+                  <img src="https://i.ibb.co/SmkJxqj/avatar1.png" alt="Author Image">
+                  <span class="author-name">Priya Sharma</span>
+                  <span class="author-location">Mumbai, India</span>
+              </div>
+          </div>
+          <div class="testimonial-card">
+              <p class="testimonial-text">
+                  "Thanks to Envo, I've taken meaningful steps to reduce my carbon footprint. Their resources are invaluable!"
+              </p>
+              <div class="testimonial-author">
+                  <img src="https://i.ibb.co/3YJ1GmK/avatar2.png" alt="Author Image">
+                  <span class="author-name">Rajesh Kumar</span>
+                  <span class="author-location">Chennai, India</span>
+              </div>
+            </div>
+          <div class="testimonial-card">
+              <p class="testimonial-text">
+                  "Their dedication to the environment is truly commendable. Envo is a true game-changer!"
+              </p>
+              <div class="testimonial-author">
+                  <img src="https://i.ibb.co/YBRZzGQ/avatar3.png" alt="Author Image">
+                  <span class="author-name">Ananya Gupta</span>
+                  <span class="author-location">Delhi, India</span>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="about" id="about">
+    <h1 class="who">Who are we?</h1>
+    <p class="para1">
+        Our planet is in peril, and time is running out. That’s why we founded Envo—an organization dedicated to tackling pressing environmental challenges and creating a sustainable world. We believe that every small action counts, and together, we can build a brighter future.
+    </p>
+    <p class="para2">
+        Since our inception, we have partnered with communities, governments, and organizations to promote renewable energy, reduce waste, and raise awareness about environmental conservation.
+    </p>
+    <p class="para3">
+        Whether you’re looking to reduce your carbon footprint, plant more trees, or learn about eco-friendly practices, we’re here to guide you every step of the way.
+    </p>
+    <button class="learn">Learn More</button>
+  </section>
+  <section class="service" id="services">
+    <h1 class="our">Our Initiatives</h1>
+    <p class="para1">
+        We are committed to driving impactful environmental initiatives that protect the planet and promote sustainability. Our programs focus on creating lasting change by addressing key issues such as pollution, deforestation, and climate change.
+    </p>
+    <p class="para2">
+        <b> Explore our key initiatives:</b>
+    </p>
+    <ul class="para3">
+        <li><strong>Tree Planting:</strong> Help plant trees to combat deforestation and promote biodiversity.</li>
+        <li><strong>Waste Management:</strong> Learn to reduce, reuse, and recycle to minimize waste.</li>
+        <li><strong>Workshops: </strong>Join events to learn eco-friendly lifestyle tips.</li>
+    </ul>
+    <p class="para1">Together, we can create a sustainable future where both people and the environment thrive.</p>
+    <button class="explore">Explore Our Initiatives</button>
+  </section>
+  <section class="start" id="start">
+    <h2 style="color: #3A7A40;">Contact US</h2>
+    <p>Please feel free to task to us if you have any questions. </p>
+    <p>We endeavour to answer within 24 hours.</p>
+    <form>
+        <input type="text" placeholder="Name" name="names" id="usr_name" required />
+        <br><br>
+        <input type="text" placeholder="Email" name="electronic_mail" id="usr_email" required/>
+        <br><br>
+        <textarea placeholder="Message" required></textarea>
+        <br><br>
+        <button type="submit" class="send_btn">Send</button>
+        <button type="submit" class="cancel_btn">Cancel</button>
+    </form>
+    <div class="map">
+        <iframe src="https://maps.google.com/maps?q=TechNova%20Innovations&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
+      </div>
+</section>
+    <footer>
+      <p>&copy; 2025 ENVO Innovations. All rights reserved.</p>
+    </footer>
+    <script>
+const hamburger = document.getElementById('hamburger');
+const authButtons = document.getElementById('auth-buttons');  // Assuming 'auth-buttons' holds the links
+hamburger.addEventListener('click', () => {
+  authButtons.classList.toggle('active');
+});
+const navItems = document.querySelectorAll('.auth-buttons a');  // All navigation links
+navItems.forEach(item => {
+  item.addEventListener('click', () => {
+    authButtons.classList.remove('active');  // Close the menu
+  });
+});
+window.addEventListener('click', (event) => {
+  if (!hamburger.contains(event.target) && !authButtons.contains(event.target)) {
+    authButtons.classList.remove('active');  // Close the menu
+  }
+});
+
+
+    </script>
+</body>
+</html>
