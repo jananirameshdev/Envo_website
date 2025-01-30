@@ -178,10 +178,6 @@ body {
   text-decoration: none;
   transition: background-color 0.3s;
 }
-
-.auth-buttons a:hover {
-  background-color: #555;
-}
 .hamburger {
   display: none;
   cursor: pointer;
@@ -421,6 +417,10 @@ body {
    body{
      background-size: cover;
    }
+   .logo , .hamburger{
+    display: block;
+    margin-right: 70px;
+   }
    .navbar {
      flex-direction: column;
      align-items: center;
@@ -462,7 +462,11 @@ body {
   display: flex;
 }
 .home{
-  margin-bottom: 80px;
+height: fit-content;
+margin-bottom: 10px;
+}
+.our{
+  font-size: large;
 }
  }
  @media only screen and (max-width: 992px){
