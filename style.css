@@ -461,7 +461,9 @@ body {
 .hamburger {
   display: flex;
 }
-
+.home{
+  margin-bottom: 80px;
+}
  }
  @media only screen and (max-width: 992px){
    body{
